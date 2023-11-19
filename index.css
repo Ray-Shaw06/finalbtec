@@ -1,0 +1,657 @@
+body {
+    background: radial-gradient(circle, white, #004aad);
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh; 
+    color:white;
+       
+}
+
+.navbar {
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+    align-items: center;
+    font-size: 1em;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #051324;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2vh;
+}
+
+#ptlogo{
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.carousel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 20%;
+  margin: 10vh auto;
+  padding-top: 10vh;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel img {
+    object-fit: cover;
+    animation: slide 10s infinite;
+    max-width: 300px;
+}
+
+@keyframes slide {
+    0% {opacity: 1; transform: translateX(-100%);}
+    33% {opacity: 1; transform: translateX(0%);}
+    66% {opacity: 1; transform: translateX(100%);}
+    100% {opacity: 1; transform: translateX(100%);}
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.container {  display: grid;
+    grid-template-columns: 0.3fr 0.25fr;
+    grid-template-rows: 0.25fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "img1 star1"
+      "img1 text1";
+    justify-content: end;
+  }
+  
+  .star1 {  grid-area: star1;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+    }
+
+  .text1 { grid-area: text1; 
+    background-color:#051324;
+    border-radius:20px;
+    font-size:100%;
+    padding-inline: 10px;
+}
+  
+  .img1 { grid-area: img1; 
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+}
+
+
+.left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .container {  
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "img1 star1"
+      "img1 text1";
+    font-size: 0.5rem;
+  }
+}
+
+.container1{   display: grid;
+    grid-template-columns:0.25fr 0.3fr ;
+    grid-template-rows:1fr 0.25fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "star2 img2"
+      "text2 img2";
+    padding-top: 100px;
+  }
+  
+  .star2 {  grid-area: star2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    }
+
+  .text2 { grid-area: text2; 
+    background-color:#051324;
+    border-radius:20px;
+    font-size:100%;
+    padding-inline: 10px;
+}
+  
+  .img2 { grid-area: img2; 
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+}
+
+@media screen and (max-width: 768px) {
+  .container1{ 
+    display: grid;
+    grid-template-columns:0.5fr 0.5fr ;
+    grid-template-rows:auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "star2 img2"
+      "text2 img2";
+    font-size:0.5rem;
+  }
+}
+
+.ptfooter{
+    color: #051324;
+    background-color:rgba(255, 255, 255, 0.7);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 1 00px;
+    position: fixed;
+ 
+}
+
+form {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius:20px;
+    background-color:rgba(255, 255, 255, 0.7) ;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    color:#051324;
+}
+
+label{
+    font-weight: 600;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    width:100%;
+    height:60px;
+    border-radius:20px;
+}
+
+label, input{
+    height: 30px;
+}
+
+.formcss{
+    display: flex;
+    justify-content: center;
+}
+
+.pagesub{
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 2rem;
+    color: #051324;
+}
+
+input[type=submit] {
+    border-radius: 20px;
+    color: white;
+    background-color: #051324;
+    font-size: small;
+    text-align: center;
+    width:30%;
+    margin: 0 auto;
+}
+
+
+
+
+.container2 {  display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1.25fr 0.05fr 1.25fr 0.05fr 1.25fr 0.05fr 1.25fr;
+    grid-auto-columns: 1fr;
+    gap: 2px 1vh;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tevents mparties scelebrations"
+      "cap cap1 cap2"
+      "entertainment fundraisers bcatering"
+      "cap3 cap4 cap5"
+      "tp ip sl"
+      "cap6 cap7 cap8";
+    font-size: 1.5rem;
+}
+  .tevents { grid-area: tevents;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+}
+  
+  .mparties { grid-area: mparties; 
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+}
+  
+  .scelebrations { grid-area: scelebrations; 
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+}
+  
+  .cap { grid-area: cap; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color:#051324;
+    font-weight: 900;
+}
+  
+  .cap1 { grid-area: cap1;  
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color:#051324;
+    font-weight: 900;
+
+}
+  
+  .cap2 { grid-area: cap2; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color:#051324;
+    font-weight: 900;
+}
+  
+  .cap3 { grid-area: cap3; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color:#051324;
+    font-weight: 900;
+}
+  
+  .cap4 { grid-area: cap4; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color:#051324;
+    font-weight: 900;
+}
+  
+  .cap5 { grid-area: cap5; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color:#051324;
+    font-weight: 900;
+}
+  
+  .cap6 { grid-area: cap6; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color:#051324;
+    font-weight: 900;
+}
+  
+  .cap7 { grid-area: cap7; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color:#051324;
+    font-weight: 900;
+}
+  
+  .cap8 { grid-area: cap8; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color:#051324;
+    font-weight: 900;
+}
+  
+  .entertainment { grid-area: entertainment; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+  
+  .fundraisers { grid-area: fundraisers; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+  
+  .bcatering { grid-area: bcatering;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+}
+  
+  .tp { grid-area: tp; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+}
+  
+  .ip { grid-area: ip; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+}
+  
+  .sl { grid-area: sl; 
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .container2 {
+      gap: 10px;
+      font-size: 1rem;
+    }
+  }
+
+.txtbubble{
+    font-size:0.95rem;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.container3 {  display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1.25fr  0.05fr  1.25fr 0.05fr ;
+    grid-auto-columns: 33%;
+    gap: 0px 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "staff staff1 staff2"
+      "name1 name2 name3"
+      "staff3 staff4 staff5"
+      "name4 name5 name6";
+    color: #051324;
+    font-weight: 900;
+    font-size:0.9rem;
+    padding-bottom: 100px;
+  }
+  
+  .staff { grid-area: staff; }
+  
+  .staff1 { grid-area: staff1; }
+  
+  .staff2 { grid-area: staff2; }
+  
+  .staff3 { grid-area: staff3; }
+  
+  .staff4 { grid-area: staff4; }
+  
+  .staff5 { grid-area: staff5; }
+  
+  .name1 { grid-area: name1; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom:100px;
+}
+  
+  .name2 { grid-area: name2; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom:10px;
+}
+  
+  .name3 { grid-area: name3; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom:10px;
+}
+  
+  .name4 { grid-area: name4; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom:10px;
+}
+  
+  .name5 { grid-area: name5; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom:10px;
+}
+  
+  .name6 { grid-area: name6; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.container4 {  display: grid;
+    grid-template-columns: 15% 15% 15%;
+    grid-template-rows: 10% 50% 20%;
+    grid-auto-columns: 300px;
+    gap: 100px 200px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "bronzeimg silverimg goldimg"
+      "bronzetxt silvertxt goldtxt"
+      "submitb submits submitg";
+    color: #051324;
+  justify-content: center;
+  padding-top: 10vh;
+  }
+  
+  .bronzeimg { grid-area: bronzeimg;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .silverimg { grid-area: silverimg; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .goldimg { grid-area: goldimg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+  
+  .bronzetxt { grid-area: bronzetxt; 
+background-color:#B08D57;
+border-radius:20px;
+
+}
+  
+  .silvertxt { grid-area: silvertxt; 
+    background-color:#A6A6A6;
+    border-radius:20px;
+}
+  
+  .goldtxt { grid-area: goldtxt; 
+    background-color:#FFDE59;
+    border-radius:20px;
+}
+  
+  .submitb { grid-area: submitb; }
+  
+  .submits { grid-area: submits; }
+  
+  .submitg { grid-area: submitg; }
+
+
+#bronzeframe{
+    border-radius: 50%;
+    border:10px solid #B08D57;
+}
+
+#silverframe{
+    border-radius: 50%;
+    border:10px solid #A6A6A6;
+}
+
+#goldframe{
+    border-radius: 50%;
+    border:10px solid #FFDE59;
+}
+
+.heading3{
+    font-size:2rem;
+}
+
+.pricebuy{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:2rem;
+}
+
+
+.container5 {  display: grid;
+    grid-template-columns: 1fr 0.8fr 1.2fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title1 title2 title2"
+      "service-details starrev ."
+      "service-details revtxt imgrev"
+      "service-details starrev1 ."
+      "service-details revtxt1 imgrev1";
+    padding-bottom: 10vh;
+  }
+  
+  .title2 { grid-area: title2; }
+  
+  .title1 { grid-area: title1; }
+  
+  .service-details { grid-area: service-details; 
+    border-radius:20px;
+    max-width: 400px;
+    max-height: 500px;
+    background-color: #051324;
+    color: white;
+}
+  
+  .starrev1 { grid-area: starrev1; 
+display: flex;
+align-items: flex-end;
+justify-content: center;
+}
+  
+  .starrev { grid-area: starrev; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+  
+  .revtxt { grid-area: revtxt; 
+    border-radius:20px;
+    max-width: 400px;
+    max-height: 500px;
+    background-color: #051324;
+    color: white;
+}
+  
+  .imgrev { grid-area: imgrev; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .imgrev1 { grid-area: imgrev1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .revtxt1 { grid-area: revtxt1; 
+    border-radius:20px;
+    max-width: 400px;
+    max-height: 500px;
+    background-color: #051324;
+    color: white;
+}
+  
+@media screen and (max-width: 768px) {
+  .container5{
+    font-size:0.5rem;
+    grid-template-columns: 0.2fr 1.6fr 1.2fr;
+  }
+}
+
+
+
+.thanktxt{
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  align-items: center;
+  color: #051324;
+  margin-top: 200px;
+}
+
+.bubbledown{
+  background-color: #051324;
+  border-radius:20px;
+  padding-inline: 10px;
+}
+
+.packagebuy a{
+  margin: 10vh auto;
+  background-color:#051324;
+  color: white;
+  border-radius: 25%;
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+}
